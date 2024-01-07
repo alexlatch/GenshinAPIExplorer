@@ -1,9 +1,14 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+/* Color Palette
+#0b090a;
+#161a1d;
+#660708;
+#a4161a;
+#ba181b;
+#e5383b;
+#b1a7a6;
+#d3d3d3;
+#f5f3f4;
+#ffffff; */
 
 footer {
   text-align: center;
@@ -14,38 +19,106 @@ footer {
   bottom: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  background-color: #ffba79;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 70px 10px 10px 10px;
+  padding-bottom: 50px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+main {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+ul {
+  text-align: left;
+}
+h3 {
+  text-align: left;
+}
+
+a {
+  color: white
+}
+
+.center {
+  text-align: center;
+  background-color: #ffceaf;
+  color: black;
+}
+
+.content {
+  border-color: #a4161a;
+  border-width: 2px;
+  border-style: outset;
+  background-color: #a4161a;
+  padding: 4px;
+  width: 46%;
+}
+
+header {
+  background-color: #161a1d;
+  font-size: 30px;
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  position: fixed;
+  justify-content: space-between;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+header p {
+  margin: 5px;
+}
+
+header a {
+  color: #f5f3f4;
+}
+
+header a:hover {
+  font-weight: bold;
+}
+
+.name {
+  display: block;
+}
+
+.links {
+  margin-right: 20px;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .content {
+    width: 25%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 667px) {
+  header {
+    font-size: 25px;
+  }
+  main {
+    flex-flow: column;
+    align-items: center;
+  }
+  .content {
+    width: 90%;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 557px) {
+  header {
+    font-size: 20px;
   }
 }
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+@media (max-width: 457px) {
+  header {
+    font-size: 15px;
+  }
 }
