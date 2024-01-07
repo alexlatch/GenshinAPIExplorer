@@ -1,13 +1,13 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-// import Home from "./Home";
+import Home from "./Home";
 
 function MainSection() {
   return (
     <div>
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }
