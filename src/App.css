@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+footer {
+  text-align: center;
+  background-color: #161a1d;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
