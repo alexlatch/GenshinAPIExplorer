@@ -1,4 +1,5 @@
 import React from "react";
+import Characters from "./Characters";
 
 
 function Home() {
@@ -6,6 +7,8 @@ function Home() {
         <>
         <div className="center">
             <p>funky lil home page</p>
+            <p>Test:</p>
+            <Characters />
         </div>
         </>
     );
