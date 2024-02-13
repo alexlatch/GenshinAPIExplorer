@@ -25,17 +25,17 @@ function Characters () {
         : characters; 
     return (
         <>
-        <div>
+        {/* <div>
          <label>
            Search:{" "}
           <input type="text" 
              placeholder="search"
            onChange={(e) => setSearchParam(e.target.value.toLowerCase())}/>
          </label>
-        </div>
+        </div> */}
         {characterToDisplay.map((character)=> {
             return <><div id="character">
-            <h2 key={character.id}>{character.name}</h2>
+            <h2 /*key={character.id}*/>{character.name}</h2>
             {/* <p className="description">{post.description}</p>
             <p>Price: {post.price}</p>
             <h3>Seller: {post.author.username}</h3>
